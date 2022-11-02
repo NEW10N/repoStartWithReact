@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Navheader() {
+function NavheaderContainer() {
     return (
         <nav>
             <a href="http://">Documentacion</a>
@@ -12,4 +12,4 @@ function Navheader() {
     )
 }
 
-export default Navheader
+export default NavheaderContainer

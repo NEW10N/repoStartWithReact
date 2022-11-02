@@ -1,15 +1,41 @@
+import { createGlobalStyle } from 'styled-components';
+// import './App.css';
+import HeaderContainer from './components/HeaderContainer';
+import MainContainer from './components/MainContainer';
+import FooterContainer from './components/FooterContainer';
 
-import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+const GlobalStyle = createGlobalStyle`
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+  font-size: 62.5%
+}
+
+body, #root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+`;
 
 function App() {
   return (
     <>
-      <Header />
-      <Main/>
-      <Footer/>
+    <GlobalStyle/>
+      <HeaderContainer />
+      <MainContainer />
+      <FooterContainer/>
     </>
 
   );
