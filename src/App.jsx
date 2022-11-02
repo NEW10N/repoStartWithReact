@@ -1,9 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-// import './App.css';
-import HeaderContainer from './components/HeaderContainer';
-import MainContainer from './components/MainContainer';
-import FooterContainer from './components/FooterContainer';
-
+import Header from './components/header/Header';
+import Nav from './components/header/nav/Nav';
+import Count from './components/main/count/Count';
+import Main from './components/main/Main'
 const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
@@ -12,12 +11,13 @@ const GlobalStyle = createGlobalStyle`
   }
   html{
   font-size: 62.5%
-}
+  }
 
 body, #root{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: orange;
 }
 
 nav{
@@ -32,10 +32,15 @@ nav{
 function App() {
   return (
     <>
-    <GlobalStyle/>
-      <HeaderContainer />
-      <MainContainer />
-      <FooterContainer/>
+      <GlobalStyle />
+      <Header titulo = "Titulo Pruebas" nav ={<Nav link = "nosotros props"/>}>
+        
+      {/* Opcion 2 ChildrenProps */}
+      {/* <h2>Empresa</h2>
+      <h3>Up</h3>
+      <Nav link = "nosotros child"/> */}
+      </Header>
+      <Main/>
     </>
 
   );
