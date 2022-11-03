@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-import Header from './components/header/Header';
-import Nav from './components/header/nav/Nav';
-import Count from './components/main/count/Count';
-import Main from './components/main/Main'
+// import Header from './components/header/Header';
+// import Nav from './components/header/nav/Nav';
+// import Count from './components/main/count/Count';
+// import Main from './components/main/Main'
 const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
@@ -33,14 +33,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header titulo = "Titulo Pruebas" nav ={<Nav link = "nosotros props"/>}>
-        
-      {/* Opcion 2 ChildrenProps */}
-      {/* <h2>Empresa</h2>
-      <h3>Up</h3>
-      <Nav link = "nosotros child"/> */}
-      </Header>
-      <Main/>
+      APP
     </>
 
   );
