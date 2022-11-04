@@ -10,7 +10,7 @@ function CardProduct({ producto, onAdd }) {
     let { nombre, imagen, stock, precio } = producto
 
     return (
-        <Card>
+        <Card >
             <h2>{nombre}</h2>
             <img src={imagen} alt={nombre} />
             <p>

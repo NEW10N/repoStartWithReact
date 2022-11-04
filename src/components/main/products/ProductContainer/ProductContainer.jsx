@@ -5,8 +5,8 @@ function ProductContainer({listaProductos}) {
   
 // let {nombre,imagen,stock,requerido,} = producto
   return (
-    listaProductos.map(element =>{
-      return <CardProductManager producto = {element}/>
+    listaProductos.map((element,key) =>{
+      return <CardProductManager producto = {element} key ={key}/>
     })
     // listaProductos.map(element =>{
       // return

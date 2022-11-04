@@ -5,7 +5,7 @@ function CardProductManager({producto}) {
 
     
     const [tempProducto, settempProducto] = useState({...producto});
-    console.log(tempProducto);
+    // console.log(tempProducto);
 
     function onAdd(add){
         let productCopy = {...tempProducto}
