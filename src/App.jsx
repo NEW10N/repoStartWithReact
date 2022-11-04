@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { HeaderContainer } from './components/header/HeaderContainer';
-import {MainContainer} from './components/main/MainContainer';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
 const GlobalStyle = createGlobalStyle`
 
   *{
@@ -32,8 +32,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <HeaderContainer/>
-      <MainContainer/>
+      <Header/>
+      <Main/>
     </>
 
   );
