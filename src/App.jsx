@@ -1,9 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-// import Header from './components/header/Header';
-// import Nav from './components/header/nav/Nav';
-// import Count from './components/main/count/Count';
-// import Main from './components/main/Main'
+import { HeaderContainer } from './components/header/HeaderContainer';
+import {MainContainer} from './components/main/MainContainer';
 const GlobalStyle = createGlobalStyle`
+
   *{
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@ body, #root{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 nav{
@@ -33,7 +32,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      APP
+      <HeaderContainer/>
+      <MainContainer/>
     </>
 
   );
