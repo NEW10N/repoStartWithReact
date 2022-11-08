@@ -1,10 +1,12 @@
 import React from 'react';
-import ProductsContainer from './productContainer/ProductsContainer';
+import { Outlet } from 'react-router-dom';
+import PersonajesListContainer from './personajes/PersonajesListContainer';
 
 const Main = () => {
   return (
     <main>
-        <ProductsContainer/>
+        {/* <PersonajesListContainer/> */}
+        <Outlet/>
     </main>
   )
 }

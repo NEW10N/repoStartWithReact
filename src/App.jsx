@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+
 const GlobalStyle = createGlobalStyle`
 
   *{
