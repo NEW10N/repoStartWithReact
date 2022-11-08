@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import PersonajesListContainer from './personajes/PersonajesListContainer';
+import PersonajesListContainer from './productos/ProductosListContainer';
 
 const Main = () => {
   return (

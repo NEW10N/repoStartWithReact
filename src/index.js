@@ -7,9 +7,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './components/main/home/Home';
-import PersonajesListContainer from './components/main/personajes/PersonajesListContainer';
-import PersonajeDataContainer from './components/main/personajes/personajeDataContainer/PersonajeDataContainer';
-
+import ProductosListContainer from './components/main/productos/ProductosListContainer';
+import ProductosDataContainer from './components/main/productos/productosDataContainer/PersonajeDataContainer';
+import Login from './components/login/Login';
+import  {About} from './components/about/About';
+import Background from './components/background/Background';
+import Registro from './components/registro/Registro';
 // const router = createBrowserRouter([{
 //   path: "/",
 //   element: <App />
@@ -39,19 +42,37 @@ const router = createBrowserRouter([
       }
       ,
       {
-        path:"/personajes",
-        element: <PersonajesListContainer/>
+        path:"/productos",
+        element: <ProductosListContainer/>
       }
       ,
       {
-        path:"personajes/:id",
-        element: <PersonajeDataContainer/>
-      }
+        path:"productos/:id",
+        element: <ProductosDataContainer/>
+      }      ,
+      {
+        path:"/About",
+        element: <About/>
+      },
       // ,
       // {
       //   path: "about",
       //   element: <About />,
       // },
+    ],
+  },{
+    path: "/login",
+    element: <Background/>,
+    children: [
+      {
+        path:"/login",
+        element: <Login/>
+      },
+      {
+        path:"/login/new",
+        element: <Registro/>
+      }
+      
     ],
   },
 ]);

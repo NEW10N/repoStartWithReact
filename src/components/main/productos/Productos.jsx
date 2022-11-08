@@ -9,18 +9,18 @@ max-width:300px;
 margin: 10px;
 `;
 
-const Personaje = ({ personaje }) => {
+const Productos = ({ productos }) => {
   // console.log(personaje)
   return (
     <>
-    <Link to ={`/personajes/${personaje.id}`}>
+    <Link to ={`/productos/${productos.id}`}>
       <Card>
-        <h1>{personaje.name}</h1>
-        <img src={personaje.image} alt=''></img>
+        <h1>{productos.name}</h1>
+        <img src={productos.image} alt=''></img>
       </Card>
     </Link>
     </>
   )
 }
 
-export default Personaje
+export default Productos
